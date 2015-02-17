@@ -1,0 +1,302 @@
+ /* Date: 1/17/15 
+   Author: Richard Danh
+   stylesheet.css
+*/
+
+
+/*
+---------- Start CSS Reset ---------------
+   http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* --------- End CSS Reset ---------*/
+/* --------- Start CF Fix  ---------*/
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+
+.cf {
+    *zoom: 1;
+}
+/* --------- Start CF Fix ---------*/
+
+/*
+---------- Start Main CSS ---------------
+	Author: Richard Danh;
+	Assistant Author: Samm Wimshurt;
+	V1.0
+	Last Edited: 1/16/15 12:12 PM
+*/
+
+/*Some Body Fixes*/
+body, html { 
+	padding: 0px;
+	margin: 0px; 
+}
+body {
+	background-color: #efefef;
+	font-family: Arial;
+	background-image:url('../img/overlay.png');
+}
+/*Some Body Fixes*/
+
+.holder {
+	width:960px;
+	margin:0 auto;
+}
+
+/*BackGround Crap Start!*/
+.trans-dark {
+ 	height:100%;
+ 	width: 100%;
+ 	position: absolute;
+ 	top: 0;
+ 	background-color: rgba(0, 0, 0, 0.5);
+ 	z-index: 1;
+}
+
+.container {
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/*BackGround Crap Stop!*/
+/*Logo*/
+#logo img {
+	height: 70px;
+	width: auto;
+	margin-bottom: 3px;
+	margin-top: 3px;
+}
+
+#logo {
+	float: left;
+}
+/*Logo*/
+/*Nav*/
+
+/*Nav*/
+
+/*Login Menu and Header*/
+.btn-login {
+	font-family: 'Raleway', sans-serif;
+	float: right;
+	margin: 0 5px;
+	display: inline-block;
+	color:black;
+	margin-top: 22px;
+	font-size: 22px;
+	padding-left: 20px;
+}
+
+.btn-login:hover{
+	color: black;
+	text-decoration: underline;
+	font-style: bold;
+}
+
+header {
+	position: fixed;
+	z-index: 10;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #efefef;
+}
+/*Login Menu and Header*/
+/*Some Crap I cant find to put at*/
+.hvr-underline-from-center:before {
+	background-color: black;
+}
+/*SOme Crap I can't find to put at*/
+/*Section #1 */
+.sec-container {
+	position: absolute;
+	z-index: 100;
+	width: 100%;
+}
+
+.sec-info {
+	top: 25%;
+}
+
+.section1 {
+	background-image:url('../img/backgrounds/slide1.jpg');
+	text-align: center;
+}
+
+/*Section #1 */
+/*Sections */
+.section4 {
+	background-image:url('../img/backgrounds/slide3.jpg');
+	text-align: center;
+}
+
+.section-title {
+	display: inline-block;
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	color: white;
+	text-transform: uppercase;
+	border: solid 2px #efefef;
+	padding: 10px;
+	line-height: 39px;
+	font-size: 36px;
+	cursor: crosshair;
+}
+
+.section-title2 {
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	color: black;
+	text-transform: uppercase;
+	border: solid 2px black;
+	padding: 10px;
+	line-height: 39px;
+	font-size: 36px;
+	width: 658px;
+	height: auto;
+	margin: 0 auto;
+	margin-top: 60px;
+}
+
+.section-title2:hover {
+	color: white;
+	border:solid 1px #fff;
+	background-color: black;
+	cursor: crosshair;
+}
+.section-title:hover {
+	color: black;
+	border:solid 1px #fff;
+	background-color: white;
+}
+
+.aboutus-des-item {
+	position: relative;
+	display: inline-block;
+	text-align: center;
+	width: 20%;
+	margin: 60px 20px;
+	vertical-align: top;
+}
+
+.aboutus-des-item img {
+	height: auto;
+	width: auto;
+}
+
+h3 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 25px;
+	font-style: bold;
+	text-align: center;
+	padding-top: 20px;
+	color:black;
+}
+
+.servers{
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	font-size: 50px;
+	color: black;
+	text-transform: uppercase;
+}
+.section3 h3 {
+	text-align: center;
+	font-size: 40px;
+	padding-top: 20px;
+	color: black;
+	font-family: 'Raleway', sans-serif;
+}
+
+.aboutus-des-item h4 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 17.5px;
+	margin-top: 10px;
+	color: black;
+}
+.section-3 {
+	position: relative;
+	display: inline-block;
+	text-align: center;
+}
+.section-3 img{
+	width: auto;
+	height: 150px;
+}
+
+.section-3 h5 {
+	margin-top: 20px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 25.5px;
+	color: white;
+}
+/*Sections*/
+
+.copyright {
+	margin-top: 15px;
+	font-size: 10px;
+	font-family: 'Raleway', sans-serif;
+	color:white;
+}
+
+.copyright-extra {
+	font-family: 'Raleway', sans-serif;
+	color:white;
+	font-size: 8px;
+}
